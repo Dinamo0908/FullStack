@@ -1,0 +1,95 @@
+b {
+    color: red;
+}
+.contact-form {
+    font-size: 50px;
+}
+.text {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    width: 2em;
+}
+.contact-form__ol {
+    font-size: 2em;
+}
+.padre {
+    height: 200px;
+    width: 200px;
+    background: orange;
+    display: block;
+    position: relative;
+}
+
+.hijo {
+    height: 100px;
+    width: 100px;
+    background: brown;
+    display: block;
+    position: relative;
+    left: 150px;
+    z-index:-1
+}
+.cajas {
+    margin-left: 300px;
+    display: block;
+}
+.caja1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    overflow: auto;
+    top: 20px;
+    left: 200px;
+    
+}
+.caja2 {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+}
+.caja3 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    position: relative;
+}
+/*h1 {
+    background-color: red;
+    border-radius: 50%;
+    text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff, 2px 2px 7px #fff;
+    box-shadow: 2px 4px 15px 0 #000;
+}*/
+.si {
+    background-color: red;
+    display: inline-block;
+    margin: 20px 10px;
+    border: 10px solid blue;
+}
+#mesi-modify {
+    color: orange;
+}
+
+.mesi {
+    color: green;
+}
+
+[coto = "hello"] {
+    color: rebeccapurple;
+}
+
+h2 i {
+    color: brown;
+}
+
+b {
+    color: blue;
+}
+
+b:hover {
+    color: aquamarine;
+}
+
+p::first-letter {
+    color:blue;
+}

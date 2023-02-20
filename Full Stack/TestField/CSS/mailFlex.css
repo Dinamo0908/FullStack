@@ -1,0 +1,79 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #222;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80vh;
+    background: #444;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 4px solid #fff;
+    max-width: 1000px;
+}
+
+.form {
+    min-width: 400px;
+    flex: 1; 
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+
+.form__section-input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #1a5;
+    background: transparent;
+    color: #fff;
+}
+
+.form__section-input:focus {
+    background: linear-gradient(to bottom, transparent, #333);
+    border-bottom-color: #1d5;
+}
+
+.form__section textarea {
+    min-width: 140px;
+    height: 70px;
+    resize: none;
+}
+
+.form-img {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 400px;
+    order: 1;
+}
+
+.form-img img {
+    width: 50%;
+    margin: auto;
+}
+
+.form__section-input[type = "submit"] {
+    background-color: #0a5;
+    border-bottom: none;
+}
+
+.form__section-input[type = "submit"]:hover {
+    background-color: #0a2;
+}
+
+.form__section-input[type = "submit"]:active {
+    background-color: #0b2;
+}
+
+.form__section-input[type = "submit"]:focus {
+    background: linear-gradient(to bottom, #072, #094);
+}

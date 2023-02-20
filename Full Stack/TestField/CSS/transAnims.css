@@ -1,0 +1,96 @@
+.container {
+    height: 1200px;
+    width: 900px;
+    background: #86c;
+    padding: 15px;
+}
+
+
+.caja-anim {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    background: #d09;
+    position: relative;
+    animation-name: desplazamiento;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(0.4, 1.11, 2.3, 0.5);
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    text-align: center;
+}
+
+.caja-anim a {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -70px;
+}
+
+@keyframes desplazamiento {
+   /*    from {
+        position: relative;
+        background: yellowgreen;
+        left: 0;
+    }
+
+    to {
+         left: 100%;
+         background: green;
+    }*/
+
+    0% {
+        background: yellowgreen;
+        left: 0;
+    }
+
+    50% {
+        background: white;
+    }
+
+    100% {
+         left: 80%;
+         background: green;
+    }
+}
+
+.caja {
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    background: #d00;
+    transition-property: left, background;
+    transform: scaleX(2) translate(100%, 100%);
+    transition-duration: 3s, 1s;
+    transform: scale(2);
+    position: relative;
+    left: 0;
+}
+
+.container:hover > .caja {
+    left: 80%;
+    background: #333;
+    transform: scale(2) skew(30deg);
+}
+
+/*.caja:first-child {
+    transition-timing-function: linear;
+}*/
+
+.caja:nth-child(2) {
+    transition-timing-function: ease;
+}
+
+.caja:nth-child(3) {
+    transition-timing-function: ease-in;
+}
+
+.caja:nth-child(4) {
+    transition-timing-function: ease-out;
+}
+
+.caja:nth-child(5) {
+    transition-timing-function: ease-in-out;
+}

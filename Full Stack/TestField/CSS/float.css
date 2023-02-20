@@ -1,0 +1,95 @@
+.contenedor {
+    font-weight: bold;
+}
+
+.contenedor-img__p::first-line {
+    color:blue;
+    font-size: 2em;
+}
+.contenedor-img {
+    height: 500px;
+    width: 500px;
+    font-weight: bold;
+    background: green;
+    overflow: auto;
+    padding: 20px;
+}
+.contenedor-img img{
+    width: 50%;
+    height: 50%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.primario {
+    background: red;  
+    width: 50%;  
+    float: right;
+}
+.secundario {
+    background: yellow;
+    float: right;
+    width: 50%;
+}
+
+form {
+    position: relative;
+    display: block;
+    margin: 100px auto;
+    background: grey;
+    width: 50%;
+    padding: 100px;
+}
+
+input {
+    display: inherit;
+    margin: auto;
+}
+
+input::placeholder {
+    color: red;
+    font-family: Georgia;
+    font-style: italic;
+    text-align: center;
+}
+
+p::selection {
+    color:red;
+}
+
+.ab::after {
+    content: "goodbye";
+    color: red;
+}
+
+.ab::before {
+    content: "hello";
+    color: red;
+}
+
+.caja1 {
+    height: 250px;
+    width: 250px;
+    background: orange;
+}
+
+.caja1:hover {
+    height: 300px;
+    width: 300px;
+}
+
+.caja1 h1 a:link {
+    color: red;
+}
+
+.caja1:active {
+    color:blue;
+}
+
+.caja2:focus {
+    color:lightgray;
+}
+
+.caja1 p:lang(en){
+    color:purple;
+}
