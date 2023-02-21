@@ -70,7 +70,7 @@ body {
 
 .flex-container-home {
     display: flex;
-    flex-wrap: 1;
+    flex-wrap: wrap;
     margin-top: 100px;
 }
 
@@ -78,12 +78,11 @@ body {
     display: flex;
     flex: 1;
     padding: 10px;
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 250px;
 }
 
 .flex-container-home__img {
-    width: 75%;
+    width: 250px;
     margin: auto;
     margin-left: 50%;
     border: 20px solid #162B4E;
@@ -123,6 +122,7 @@ body {
 
 .flex-container-home__about {
     margin-left: 250px;
+    margin-right: 70px;
     width: 600px;
     background: #00315d;
 }
@@ -171,6 +171,11 @@ body {
 
 .flex-container-home__about-info-post-p1 {
     padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.flex-container-home__about-info-post-p1 h3 {
+    margin-left: 5px;
 }
 
 .flex-container-home__about-info-post-p1-p {
@@ -180,7 +185,6 @@ body {
 
 .grid-container-hab {
     margin-top: 150px;
-    margin-left: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: (2, 1fr);
@@ -189,8 +193,9 @@ body {
     grid-gap: 20px;
 }
 
-.grid-item-tec {
+.grid-item-hab__tec {
     display: grid;
+    justify-self: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: (2, 1fr);
     grid-template-areas: "ht ht"
@@ -203,37 +208,71 @@ body {
     background: #00315d;
 }
 
-.grid-item-tec-ht {
+.grid-item-hab__tec-ht {
     grid-area: ht;
 }
 
-.grid-item-tec-len {
+.grid-item-hab__tec-len {
     margin-left: 40px;
     grid-area: len;
 }
 
-.grid-item-tec-len h3 {
+.grid-item-hab__tec-len h3 {
     display: inline-block;
     padding: 3px 0px;
     border-bottom: 2px solid #fff;
 }
 
-.grid-item-tec-mot {
+.grid-item-hab__tec-mot {
     margin-left: 30px;
     grid-area: mot;
 }
 
-.grid-item-tec-mot h3 {
+.grid-item-hab__tec-mot h3 {
     display: inline-block;
     padding: 3px 0px;
     border-bottom: 2px solid #fff;
 }
 
-.grid-item-tec-ht, .grid-item-prof h2, .grid-item-hob h2, .grid-item-idiom h2 {
+.grid-item-hab__tec-mot ul, .grid-item-hab__tec-len ul {
+    padding-top: 6px;
+}
+
+.grid-item-hab__prof {
+    grid-area: prof;
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+    height: 210px;
+    padding-top: 10px;
+    background: #00315d;
+}
+
+.grid-item-hab__hob {
+    grid-area: hob;
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+    height: 120px;
+    padding-top: 5px;
+    background: #00315d;
+}
+
+.grid-item-hab__idiom {
+    grid-area: idiom;
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+    height: 120px;
+    padding-top: 5px;
+    background: #00315d;
+}
+
+.grid-item-hab__tec-ht, .grid-item-hab__prof h2, .grid-item-hab__hob h2, .grid-item-hab__idiom h2 {
     text-align: center;
 }
 
-.grid-item-tec h2:after, .grid-item-prof h2:after, .grid-item-hob h2:after, .grid-item-idiom h2:after {
+.grid-item-hab__tec h2:after, .grid-item-hab__prof h2:after, .grid-item-hab__hob h2:after, .grid-item-hab__idiom h2:after {
     content: "";
     display: block;
     margin: 0 auto;
@@ -242,33 +281,43 @@ body {
     border-bottom: 2px solid #fff;
 }
 
-.grid-item-prof {
-    grid-area: prof;
-    width: 500px;
-    height: 210px;
-    padding-top: 10px;
-    background: #00315d;
-}
-
-.grid-item-prof ul, .grid-item-hob ul, .grid-item-idiom ul {
+.grid-item-hab__prof ul, .grid-item-hab__hob ul, .grid-item-hab__idiom ul {
     margin-top: 10px;
     margin-left: 40px;
 }
 
-.grid-item-hob {
-    grid-area: hob;
-    width: 500px;
-    height: 120px;
-    padding-top: 5px;
-    background: #00315d;
+.grid-container__exp {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (2, 1fr);
+    grid-template-areas: "ed conc"
+                         "lab lab";
+    grid-gap: 20px;
 }
 
-.grid-item-idiom {
-    grid-area: idiom;
+.grid-item__exp-ed {
     width: 500px;
-    height: 120px;
-    padding-top: 5px;
+    padding: 5px;
+    justify-self: center;
     background: #00315d;
+    grid-area: ed;
+}
+
+.grid-item__exp-conc {
+    width: 500px;
+    padding: 5px;
+    justify-self: center;
+    background: #00315d;
+    grid-area: conc;
+}
+
+.grid-item__exp-lab {
+    width: 500px;
+    padding: 5px;
+    justify-self: center;
+    background: #00315d;
+    grid-area: lab;
 }
 
 @media only screen and (max-width: 767px){
@@ -292,21 +341,20 @@ body {
         position: relative;
         z-index: 10;
         top: -3000px;
-        height: calc(100vh - 37px);
+        height: calc(100vh - 40px);
         background-color: #012a4e; 
-        width: 50%;
+        width: 55%;
         padding-top: 20px;
         transition: all 1s;
     }
 
     .nav__responsive-ul:hover > .nav__responsive-ul__li-container {
         display: block;
-        top: 30px;
+        top: 29px;
     }
 
     .flex-container-home {
         flex-direction: column;
-        align-items: center;
         width: 100%;
     }
 
@@ -326,26 +374,41 @@ body {
         height: 570px;
     }
 
+    .flex-container-home__about-info-post-p1 {
+        padding: 5px;
+        text-align: start;
+    }
+
     .grid-container-hab {
         display: grid;
         margin-top: 30px;
-        margin-left: 40px;
         grid-template-rows: (4, 1fr);
-        grid-template-areas: "tec" 
-                            "prof"
-                            "hob" 
-                            "idiom";
+        grid-template-columns: (2, 1fr);
+        grid-template-areas: "tec tec" 
+                            "prof prof"
+                            "hob hob" 
+                            "idiom idiom";
     }
 
-    .grid-item-tec, .grid-item-prof, .grid-item-hob, .grid-item-idiom {
+    .grid-item-hab__tec, .grid-item-hab__prof, .grid-item-hab__hob, .grid-item-hab__idiom {
         width: 280px;
     }
 
-    .grid-item-hob, .grid-container-idiom {
+    .grid-item-hab__tec-mot {
+        width: 50%;
+    }
+
+    .grid-item-hab__hob, .grid-container-hab__idiom {
         height: 150px;
     }
 
-    .grid-item-prof ul, .grid-item-hob ul, .grid-item-idiom ul {
+    .grid-item-hab__prof ul, .grid-item-hab__hob ul, .grid-item-hab__idiom ul {
         margin-left: 25px;
     }
+
+    .grid-item-hab__prof h2 {
+        padding: 1px;
+    }
+
+
 }
