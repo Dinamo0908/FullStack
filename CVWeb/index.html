@@ -140,62 +140,75 @@
                 <br>Fomento de la participación directa del alumno en el transcurso de la clase.</p>
             </div>
         </section>
-        <section class = "flex-container-port" id = "port">
+        <section id = "port">
                 <h2>Portafolio</h2>
-                <div class = "flex-container-port__item-github">
-                    <a href= "https://github.com/Dinamo0908" target = "_blank"><img src= "img/github.png" alt = "Cuenta de Github" title = "Github"></a> 
-                </div>
-                <div class = "flex-container-port__item-itch">
-                    <a href= "https://dinamo0809.itch.io" target = "_blank"><img src= "img/itch.png" alt = "Cuenta de Itch.io" title = "Itch.io"></a>
-                </div>
-                <div class = "flex-container-port__item-drive">
-                    <a href= "https://drive.google.com/drive/folders/1brqajPEVqojrnMu98JNhAtvf1Ml3VwdW?usp=share_link" target = "_blank"><img src= "img/drive.png" alt = "Drive de Videojuegos" title = "Prototipos"></a>
+                <div class = "flex-container-port">
+                    <div class = "flex-container-port__item-github">
+                        <a href= "https://github.com/Dinamo0908" target = "_blank"><img src= "img/github.png" alt = "Cuenta de Github" title = "Github"></a> 
+                    </div>
+                    <div class = "flex-container-port__item-itch">
+                        <a href= "https://dinamo0809.itch.io" target = "_blank"><img src= "img/itch.png" alt = "Cuenta de Itch.io" title = "Itch.io"></a>
+                    </div>
+                    <div class = "flex-container-port__item-drive">
+                        <a href= "https://drive.google.com/drive/folders/1brqajPEVqojrnMu98JNhAtvf1Ml3VwdW?usp=share_link" target = "_blank"><img src= "img/drive.png" alt = "Drive de Videojuegos" title = "Prototipos"></a>
+                    </div>
                 </div>
         </section>
-        <section>
-            <div>
+        <section id = "cont">
                 <h2>Contacto</h2>
-                <div id = "cont">
-                    <img src = "img/cel.pn">
-                    <h3>Télefono</h3>
-                    <p>+54 9 11 2462-5941</p>
+                <div class = "flex-container-cont">
+                    <div class = "flex-item-cont__tel">
+                        <img src = "img/cel.png" alt = "Número de Teléfono" title = "Teléfono">
+                        <h3>Teléfono</h3>
+                        <p>+54 9 11 2462-5941</p>
+                    </div>
+                    <div class = "flex-item-cont__mail">
+                    <a href= "mailto:arguelloagustin781@gmail.com"><img src = "img/mail.png" alt = "Correo Electrónico" title = "Mail"><h3>Mail</h3><p>arguelloagustin781@gmail.com</p></a>
+                    </div>
+                    <div class = "flex-item-cont__ubi">
+                        <img src = "img/ubi.png" alt = "Ubicación Actual" title = "Ubicación">
+                        <h3>Ubicación</h3>
+                        <p>Balvanera, CABA, Argentina.</p>
+                    </div>
+                    <div class = "flex-item-cont__linkedIn">
+                        <a href= "https://www.linkedin.com/in/agusargüello" target = "_blank"><img src = "img/linkedIn.png" alt = "Cuenta de LinkedIn" title = "LinkedIn"><h3>LinkedIn</h3></a>
+
+                    </div>
+                    <div class = "flex-item-cont__twitter">
+                        <a href= "https://twitter.com/AgusArguello__" target = "_blank"><img src = "img/twitter.png" alt = "Cuenta de Twitter" title = "Twitter"><h3>Twitter</h3></a>
+                    </div>
                 </div>
-                <div id = "cont">
-                    <img src = "img/mail.pn">
-                    <h3>Mail</h3>
-                    <a href= "mailto:arguelloagustin781@gmail.com">arguelloagustin781@gmail.com</a>
-                </div>
-                <div id = "cont">
-                    <img src = "img/linkedIn.pn">
-                    <a href= "https://www.linkedin.com/in/agusargüello"><h3>LinkedIn</h3></a>
-                </div>
-                <div id = "cont">
-                    <img src = "img/twitter.pn">
-                    <a href= "https://twitter.com/AgusArguello__"><h3>Twitter</h3></a>
-                </div>
-                <div id = "cont">
-                    <img src = "img/ubi.jp">
-                    <h3>Ubicación</h3>
-                    <p>Balvanera, CABA, Argentina.</p>
-                </div>
-            </div>
-            <div>
-                <form>
-                    <input type= "text" placeholder= "Nombre" required>
-                    <input type= "text" placeholder= "Apellido" required>
-                    <input type= "mail" placeholder= "Email" required>
-                    <textarea rows = "6" placeholder= "Tu mensaje" required></textarea>
-                    <div>
-                        <button type = "submit">Enviar</button>
+            </section>
+            <footer>
+            <div class = "flex-container-mailmsg">
+                <form class = "flex-item-mailmsg__form">
+                    <div class = "flex-item-mailmsg__formSectionRow">
+                        <div class = "flex-item-mailmsg__formSectionName">
+                            <input type= "text" placeholder= "Nombre" class = "form-item-mailmsg__input" required >
+                        </div>
+                        <div class = "flex-item-mailmsg__formSectionSurname">
+                            <input type= "text" placeholder= "Apellido" class = "form-item-mailmsg__input" required>
+                        </div>
+                    </div>
+                    <div class = "flex-item-mailmsg__formSection">
+                        <input type= "mail" placeholder= "Email" class = "form-item-mailmsg__input" required>
+                    </div>
+                    <div class = "flex-item-mailmsg__formSection">
+                        <textarea rows = "6" placeholder= "Tu mensaje" class = "form-item-mailmsg__input" required></textarea>
+                    </div>
+                    <div class = "flex-item-mailmsg__formSection">
+                        <input type = "submit" class = "form-item-mailmsg__input"></input>
                     </div>
                 </form>
             </div>
-        </section>
-        <footer>
-            <h4>Copyright Agustín Argüello.</h4>
-            <a href = "https://www.linkedin.com/in/agusargüello">Linkedin</a>
-            <a href = "https://twitter.com/AgusArguello__">Twitter</a>
-            <a href = "https://dinamo0809.itch.io">Itch.io</a>
+            <div class = "footer-copyright">
+                <h4>Agustín Argüello 2023.</h4>
+                <div class = "footer-copyright-links">
+                    <a href = "https://www.linkedin.com/in/agusargüello" target = "_blank"><img src = "img/linkedIn.png" alt = "Cuenta de LinkedIn" title = "LinkedIn"></a>
+                    <a href = "https://twitter.com/AgusArguello__" target = "_blank"><img src = "img/twitter.png" alt = "Cuenta de Twitter" title = "Twitter"></a>
+                    <a href = "https://dinamo0809.itch.io" target = "_blank"><img src= "img/itch.png" alt = "Cuenta de Itch.io" title = "Itch.io"></a>
+                </div>
+            </div>
         </footer> 
     </body>
 </html>
