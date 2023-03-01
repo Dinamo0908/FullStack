@@ -33,6 +33,28 @@ body {
 
 }
 
+@keyframes barAnim3 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 15%;
+    }
+
+}
+
+@keyframes barAnim4 {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 45%;
+    }
+
+}
+
 .nav {
     display: inline-block;
     position: fixed;
@@ -284,7 +306,7 @@ a[download = "CV"] {
     align-self: center;
     justify-self: center;
     width: 500px;
-    height: 120px;
+    height: 180px;
     padding-top: 5px;
     background: #00315d;
 }
@@ -294,9 +316,28 @@ a[download = "CV"] {
     align-self: center;
     justify-self: center;
     width: 500px;
-    height: 120px;
+    height: 180px;
     padding-top: 5px;
     background: #00315d;
+}
+
+.grid-item-hab__idiom ul li a, .grid-item-exp__conc h3 a {
+    text-decoration: none;
+}
+
+.grid-item-hab__idiom ul li a:hover {
+    font-weight: bold;
+}
+
+.grid-item-exp__conc h3 a:hover::after {
+    content: "";
+    display: block;
+    width: 0%;
+    animation-name: barAnim4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    padding-top: 5px;
+    border-bottom: 2px solid #fff;
 }
 
 .grid-item-hab__tec-ht, .grid-item-hab__prof h2, .grid-item-hab__hob h2, .grid-item-hab__idiom h2 {
@@ -659,16 +700,6 @@ a[download = "CV"] {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    @keyframes barAnim3 {
-        from {
-            width: 0%;
-        }
-    
-        to {
-            width: 15%;
-        }
-    
-    }
     .flex-container-home {
         flex-flow: column wrap;
     }
@@ -814,7 +845,7 @@ a[download = "CV"] {
     }
 
     .grid-item-hab__hob, .grid-container-hab__idiom {
-        height: 150px;
+        height: 220px;
     }
 
     .grid-item-hab__prof ul, .grid-item-hab__hob ul, .grid-item-hab__idiom ul {
