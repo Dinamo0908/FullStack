@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #f6f5f2;
+    background: #a0c7ee;
     width: 100%;
 }
 
@@ -68,7 +68,7 @@ body {
 
 @keyframes standOut {
     30% {
-        text-shadow: 1px 1px 20px #1a5;
+        text-shadow: 0px 0px 25px #1a5;
     }
 }
 
@@ -79,14 +79,14 @@ body {
     top: 0;
     height: 50px;
     width: 100%;
-    background: #1653ac;
+    background: #003d74;
     text-align: center;
 }
 
 .nav__responsive-ul__button-container {
     position: absolute;
     z-index: 30;
-    background: #1653ac;
+    background: #003d74;
     width: 100%;
     font-size: 20px;
 }
@@ -150,7 +150,7 @@ body {
 
 .flex-container-home__img {
     width: 250px;
-    border: 20px solid #1653ac;
+    border: 20px solid #003d74;
     border-radius: 50%;
 }
 
@@ -161,9 +161,9 @@ body {
     max-width: 150px;
     height: 60px;
     border: none;
-    background: #1653ac;
+    background: #0049b2;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 a[download = "CV"] {
@@ -181,17 +181,17 @@ a[download = "CV"] {
 }
 
 .flex-container-home__button:active, .form-item-mailmsg__input[type = "submit"]:active {
-    background: #002343;
+    background: #013f96;
 }
 
 .flex-container-home__button:focus, .form-item-mailmsg__input[type = "submit"]:focus {
-    background: linear-gradient(to bottom, #00315d, #002343);
+    background: linear-gradient(to bottom, #0049b2, #013f96);
 }
 
 .flex-container-home__about {
     max-width: 600px;
     margin-right: 70px;
-    background: #1653ac;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -280,7 +280,7 @@ a[download = "CV"] {
     padding-right: 10px;
     padding-top: 10px;
     grid-area: tec;
-    background: #00315d;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -321,7 +321,7 @@ a[download = "CV"] {
     width: 500px;
     height: 210px;
     padding-top: 10px;
-    background: #00315d;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -332,7 +332,7 @@ a[download = "CV"] {
     width: 500px;
     height: 180px;
     padding-top: 5px;
-    background: #00315d;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -343,7 +343,7 @@ a[download = "CV"] {
     width: 500px;
     height: 180px;
     padding-top: 5px;
-    background: #00315d;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -407,7 +407,7 @@ a[download = "CV"] {
     height: 230px;
     padding: 10px;
     justify-self: center;
-    background: #00315d;
+    background: #003d74;
     grid-area: ed;
     border-radius: 10px;
 }
@@ -417,7 +417,7 @@ a[download = "CV"] {
     height: 230px;
     padding: 10px;
     justify-self: center;
-    background: #00315d;
+    background: #003d74;
     grid-area: conc;
     border-radius: 10px;
 }
@@ -427,7 +427,7 @@ a[download = "CV"] {
     height: 230px;
     padding: 10px;
     justify-self: center;
-    background: #00315d;
+    background: #003d74;
     grid-area: lab;
     border-radius: 10px;
 }
@@ -505,7 +505,7 @@ a[download = "CV"] {
 .flex-item-cont__tel {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 20px 0px;
     text-align: center;
     border-radius: 10px;
@@ -518,7 +518,7 @@ a[download = "CV"] {
 .flex-item-cont__mail {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -531,7 +531,7 @@ a[download = "CV"] {
 .flex-item-cont__ubi {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 25px;
     text-align: center;
     border-radius: 10px;
@@ -548,7 +548,7 @@ a[download = "CV"] {
 .flex-item-cont__linkedIn {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 35px 0px;
     text-align: center;
     border-radius: 10px;
@@ -561,7 +561,7 @@ a[download = "CV"] {
 .flex-item-cont__twitter {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 50px 0px;
     text-align: center;
     border-radius: 10px;
@@ -623,7 +623,7 @@ a[download = "CV"] {
     height: 60px;
     color: #fff;
     font-weight: bold;
-    background: #00315d;
+    background: #0049b2;
     border-radius: 10px;
 }
 
@@ -859,7 +859,7 @@ a[download = "CV"] {
         z-index: 10;
         top: -3000px;
         height: 130vh;
-        background-color: #012a4e; 
+        background-color: #003d72; 
         width: 65%;
         padding-top: 20px;
         transition: all 1s;

@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #003d74;
+    background: #a2c9f0;
     width: 100%;
 }
 
@@ -68,7 +68,7 @@ body {
 
 @keyframes standOut {
     30% {
-        text-shadow: 1px 1px 20px #1a5;
+        text-shadow: 0px 0px 25px #1a5;
     }
 }
 
@@ -79,14 +79,14 @@ body {
     top: 0;
     height: 50px;
     width: 100%;
-    background: #162B4E;
+    background: #003d74;
     text-align: center;
 }
 
 .nav__responsive-ul__button-container {
     position: absolute;
     z-index: 30;
-    background: #162B4E;
+    background: #003d74;
     width: 100%;
     font-size: 20px;
 }
@@ -150,7 +150,7 @@ body {
 
 .flex-container-home__img {
     width: 250px;
-    border: 20px solid #162B4E;
+    border: 20px solid #003d74;
     border-radius: 50%;
 }
 
@@ -161,7 +161,7 @@ body {
     max-width: 150px;
     height: 60px;
     border: none;
-    background: #00315d;
+    background: #0049b2;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
@@ -182,17 +182,17 @@ a[download = "Resume"] {
 }
 
 .flex-container-home__button:active, .form-item-mailmsg__input[type = "submit"]:active {
-    background: #002343;
+    background: #013f96;
 }
 
 .flex-container-home__button:focus, .form-item-mailmsg__input[type = "submit"]:focus {
-    background: linear-gradient(to bottom, #00315d, #002343);
+    background: linear-gradient(to bottom, #0049b2, #013f96);
 }
 
 .flex-container-home__about {
     max-width: 600px;
     margin-right: 70px;
-    background: #00315d;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -281,7 +281,7 @@ a[download = "Resume"] {
     padding-right: 10px;
     padding-top: 10px;
     grid-area: tec;
-    background: #00315d;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -322,7 +322,7 @@ a[download = "Resume"] {
     width: 500px;
     height: 210px;
     padding-top: 10px;
-    background: #00315d;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -333,7 +333,7 @@ a[download = "Resume"] {
     width: 500px;
     height: 180px;
     padding-top: 5px;
-    background: #00315d;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -344,7 +344,7 @@ a[download = "Resume"] {
     width: 500px;
     height: 180px;
     padding-top: 5px;
-    background: #00315d;
+    background: #003d74;
     border-radius: 10px;
 }
 
@@ -410,7 +410,7 @@ a[download = "Resume"] {
     height: 230px;
     padding: 10px;
     justify-self: center;
-    background: #00315d;
+    background: #003d74;
     grid-area: ed;
     border-radius: 10px;
 }
@@ -420,7 +420,7 @@ a[download = "Resume"] {
     height: 230px;
     padding: 10px;
     justify-self: center;
-    background: #00315d;
+    background: #003d74;
     grid-area: comp;
     border-radius: 10px;
 }
@@ -430,7 +430,7 @@ a[download = "Resume"] {
     height: 230px;
     padding: 10px;
     justify-self: center;
-    background: #00315d;
+    background: #003d74;
     grid-area: work;
     border-radius: 10px;
 }
@@ -508,7 +508,7 @@ a[download = "Resume"] {
 .flex-item-cont__phn {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 20px 0px;
     text-align: center;
     border-radius: 10px;
@@ -521,7 +521,7 @@ a[download = "Resume"] {
 .flex-item-cont__mail {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -534,7 +534,7 @@ a[download = "Resume"] {
 .flex-item-cont__loc {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 25px;
     text-align: center;
     border-radius: 10px;
@@ -551,7 +551,7 @@ a[download = "Resume"] {
 .flex-item-cont__linkedIn {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 35px 0px;
     text-align: center;
     border-radius: 10px;
@@ -564,7 +564,7 @@ a[download = "Resume"] {
 .flex-item-cont__twitter {
     width: 300px;
     height: 250px;
-    background: #00315d;
+    background: #003d74;
     padding: 50px 0px;
     text-align: center;
     border-radius: 10px;
@@ -626,7 +626,8 @@ a[download = "Resume"] {
     height: 60px;
     color: #fff;
     font-weight: bold;
-    background: #00315d;
+    background: #0049b2;
+    border-radius: 10px;
 }
 
 .footer-copyright {
@@ -876,7 +877,7 @@ a[download = "Resume"] {
         z-index: 10;
         top: -3000px;
         height: 130vh;
-        background-color: #012a4e; 
+        background-color: #003d72; 
         width: 65%;
         padding-top: 20px;
         transition: all 1s;
