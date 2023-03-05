@@ -79,14 +79,14 @@ body {
     top: 0;
     height: 50px;
     width: 100%;
-    background: #0049b2;
+    background: #004079;
     text-align: center;
 }
 
 .nav__responsive-ul__button-container {
     position: absolute;
     z-index: 30;
-    background: #0049b2;
+    background: #004079;
     width: 100%;
     font-size: 20px;
 }
@@ -859,7 +859,7 @@ a[download = "CV"] {
         z-index: 10;
         top: -3000px;
         height: 130vh;
-        background-color: #003d72; 
+        background-color: #004079; 
         width: 65%;
         padding-top: 20px;
         transition: all 1s;
