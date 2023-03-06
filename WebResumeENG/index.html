@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset = "UTF-8">
         <meta name = "description" content = "Agustín Argüello's Resume, year 2023. He stands out as a Videogame and FrontEnd Developer and is currently Looking for a job.">
@@ -23,23 +23,23 @@
                     <li class = "nav__ul-li"><a href="#port">Portfolio</a></li>
                     <li class = "nav__ul-li"><a href="#cont">Contact</a></li>
                 </ul>
-                <ul class = "nav__responsive-ul">
-                    <div class = "nav__responsive-ul__button-container">
-                        <div class = "nav__responsive-ul__button"> <i class = "fa-solid fa-bars"></i></div>
+                <div class = "nav__responsive-menu">
+                    <div class = "nav__responsive-menu__button-container">
+                        <div class = "nav__responsive-menu__button"> <i class = "fa-solid fa-bars"></i></div>
                     </div>
-                <div class = "nav__responsive-ul__li-container">
-                        <li class = "nav__responsive-ul__li"><a href="#me">Home</a></li>
-                        <li class = "nav__responsive-ul__li"><a href="#ski">Skills</a></li>
-                        <li class = "nav__responsive-ul__li"><a href="#exp">Experiences</a></li>
-                        <li class = "nav__responsive-ul__li"><a href="#port">Portfolio</a></li>
-                        <li class = "nav__responsive-ul__li"><a href="#cont">Contact</a></li>
+                <div class = "nav__responsive-menu__child-container">
+                        <div class = "nav__responsive-menu__child"><a href="#me">Home</a></div>
+                        <div class = "nav__responsive-menu__child"><a href="#ski">Skills</a></div>
+                        <div class = "nav__responsive-menu__child"><a href="#exp">Experiences</a></div>
+                        <div class = "nav__responsive-menu__child"><a href="#port">Portfolio</a></div>
+                        <div class = "nav__responsive-menu__child"><a href="#cont">Contact</a></div>
                 </div>
-            </ul>
+            </div>
         </nav>
         <section class = "flex-container-home"  id = "me">
             <div class = "flex-container-home__img-container">
-                <img src = "img/agus.jpeg" class = "flex-container-home__img">
-                <button class = "flex-container-home__button"><a href = "Download/Agustin Arguello - Resume.pdf" download="Resume">Download Resume</a></button>
+                <img src = "img/agus.jpeg" class = "flex-container-home__img" alt = "Photo of Agustín Argüello.">
+                <a class = "flex-container-home__button" href = "Download/Agustin-Arguello-Resume.pdf" download="Resume">Download Resume</a>
             </div>
         <div class = "flex-container-home__about" >
             <h1>Agustín Argüello</h1> 
@@ -113,7 +113,7 @@
                 <h2>Spoken Languages</h2>
                 <ul>
                     <li>Spanish (Native).</li>
-                    <li>English <a href = "Download/EF SET Certificate.pdf" target = "_blank">(C2 Proficient)</a>.</li>
+                    <li>English <a href = "Download/EF-SET-Certificate.pdf" target = "_blank">(C2 Proficient)</a>.</li>
                 </ul>
             </div>
         </section>
@@ -131,7 +131,7 @@
             </div>
             <div class = "grid-item-exp__comp">
                 <h2>Competitions</h2>
-                <h3><a href = "Download/Certificado UdeSA AI Challenge 2022 - Agustín Argüello.pdf" target = "_blank">UdeSA AI Challenge 2022</a></h3>
+                <h3><a href = "Download/Certificado-UdeSA-AI-Challenge-2022-Agustín-Argüello.pdf" target = "_blank">UdeSA AI Challenge 2022</a></h3>
                 <p>I participated in a tournament in which Unity motor engine was uesd, in order to compete against football teams of 3 players. The goals was to code the players AI to win and advance in the tournament. My team was conformed of 4 people, including me.</p>
             </div>
             <div class = "grid-item-exp__work">
@@ -194,13 +194,13 @@
                         </div>
                     </div>
                     <div class = "flex-item-mailmsg__formSection">
-                        <input type= "mail" placeholder= "Email" class = "form-item-mailmsg__input" required>
+                        <input type= "email" placeholder= "Email" class = "form-item-mailmsg__input" required>
                     </div>
                     <div class = "flex-item-mailmsg__formSection">
                         <textarea rows = "6" placeholder= "Your message" class = "form-item-mailmsg__input" required></textarea>
                     </div>
                     <div class = "flex-item-mailmsg__formSection">
-                        <input type = "submit" class = "form-item-mailmsg__input"  value = "Submit"></input>
+                        <input type = "submit" class = "form-item-mailmsg__input"  value = "Submit">
                     </div>
                 </form>
             </div>

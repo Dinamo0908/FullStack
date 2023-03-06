@@ -83,7 +83,7 @@ body {
     text-align: center;
 }
 
-.nav__responsive-ul__button-container {
+.nav__responsive-menu__button-container {
     position: absolute;
     z-index: 30;
     background: #004079;
@@ -91,16 +91,16 @@ body {
     font-size: 20px;
 }
 
-.nav__responsive-ul__button {
+.nav__responsive-menu__button {
     width: 100%;
     padding: 0px 9px;
 }
 
-.nav__responsive-ul {
+.nav__responsive-menu {
     display: none;
 }
 
-.nav__responsive-ul__li {
+.nav__responsive-menu__child {
     width: 100%;
     color: #fff;
     font-size: 25px;
@@ -115,11 +115,11 @@ body {
     padding: 9px;
 }
 
-.nav__ul-li a, .nav__responsive-ul__li a {
+.nav__ul-li a, .nav__responsive-menu__child a {
     text-decoration: none;
 }
 
-.nav__responsive-ul__li a:hover {
+.nav__responsive-menu__child a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 3px;
 }
@@ -159,7 +159,6 @@ body {
     top: 340px;
     left: -35%;
     max-width: 150px;
-    height: 60px;
     border: none;
     background: #0049b2;
     font-weight: bold;
@@ -171,7 +170,7 @@ a[download = "CV"] {
     height: 60px;
     padding: 5px;
     line-height: 45px;
-    vertical-align: middle;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -180,12 +179,12 @@ a[download = "CV"] {
     box-shadow: 0px 3px 0 #1a5;
 }
 
-.flex-container-home__button:active, .form-item-mailmsg__input[type = "submit"]:active {
-    background: #013f96;
+.flex-container-home__button:active, .form-item-mailmsg__input[type = "submit"]:focus {
+    background: linear-gradient(to bottom, #0049b2, #013f96);
 }
 
-.flex-container-home__button:focus, .form-item-mailmsg__input[type = "submit"]:focus {
-    background: linear-gradient(to bottom, #0049b2, #013f96);
+.form-item-mailmsg__input[type = "submit"]:active {
+    background: #013f96;
 }
 
 .flex-container-home__about {
@@ -845,7 +844,7 @@ a[download = "CV"] {
         height: 40px;
         width: 100%;
     }
-    .nav__responsive-ul {
+    .nav__responsive-menu {
         display: block;
         width: 100%;
         text-align: left;
@@ -854,7 +853,7 @@ a[download = "CV"] {
         height: 40px;
     }
 
-    .nav__responsive-ul__li-container {
+    .nav__responsive-menu__child-container {
         position: relative;
         z-index: 10;
         top: -3000px;
@@ -865,7 +864,7 @@ a[download = "CV"] {
         transition: all 1s;
     }
 
-    .nav__responsive-ul:hover > .nav__responsive-ul__li-container {
+    .nav__responsive-menu:hover > .nav__responsive-menu__child-container {
         display: block;
         top: 29px;
     }
@@ -877,9 +876,9 @@ a[download = "CV"] {
 
     .flex-container-home__button {
         position: absolute;
-        height: 70px;
         top: 445px;
         left: 37%;
+        min-width: 120px;
     }
 
     .flex-container-home__about {
