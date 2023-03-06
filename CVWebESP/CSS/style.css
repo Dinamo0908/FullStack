@@ -1,6 +1,5 @@
 * {
     font-family: 'Lato', sans-serif;
-    font-weight: 100px;
     color: #fff;
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding, 100px);
@@ -260,8 +259,6 @@ a[download = "CV"] {
 .grid-container-hab {
     margin-top: 150px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: (2, 1fr);
     grid-template-areas: "tec prof"
                          "hob idiom";
     grid-gap: 20px;
@@ -270,8 +267,6 @@ a[download = "CV"] {
 .grid-item-hab__tec {
     display: grid;
     justify-self: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: (2, 1fr);
     grid-template-areas: "ht ht"
                          "len mot";
     width: 500px;
@@ -394,8 +389,6 @@ a[download = "CV"] {
 .grid-container-exp {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: (2, 1fr);
     grid-template-areas: "ed conc"
                          "lab lab";
     grid-gap: 20px;
@@ -655,6 +648,10 @@ a[download = "CV"] {
     padding-top: 7px;
 }
 
+.css-validate {
+    margin: auto;
+}
+
 @media only screen and (min-width: 1369px) {
 
     .flex-container-home__about {
@@ -712,8 +709,6 @@ a[download = "CV"] {
 
     .grid-container-hab {
         margin-top: 30px;
-        grid-template-rows: (4, 1fr);
-        grid-template-columns: (2, 1fr);
         grid-template-areas: "tec tec" 
                             "prof prof"
                             "hob hob" 
@@ -722,8 +717,6 @@ a[download = "CV"] {
 
     .grid-container-exp {
         margin-top: 30px;
-        grid-template-rows: (3, 1fr);
-        grid-template-columns: (2, 1fr);
         grid-template-areas: "ed ed" 
                             "conc conc"
                             "lab lab";
@@ -787,8 +780,6 @@ a[download = "CV"] {
 
     .grid-container-hab {
         margin-top: 30px;
-        grid-template-rows: (4, 1fr);
-        grid-template-columns: (2, 1fr);
         grid-template-areas: "tec tec" 
                             "prof prof"
                             "hob hob" 
@@ -797,8 +788,6 @@ a[download = "CV"] {
 
     .grid-container-exp {
         margin-top: 30px;
-        grid-template-rows: (3, 1fr);
-        grid-template-columns: (2, 1fr);
         grid-template-areas: "ed ed" 
                             "conc conc"
                             "lab lab";
@@ -817,10 +806,6 @@ a[download = "CV"] {
 }
 
 @media only screen and (max-width: 767px){
-    * {
-        font-weight: 50px;
-    }
-
     .flex-container-home__about h2::after {
         animation-name: barAnim;
         animation-duration: 2s;
@@ -898,8 +883,6 @@ a[download = "CV"] {
 
     .grid-container-hab {
         margin-top: 30px;
-        grid-template-rows: (4, 1fr);
-        grid-template-columns: (2, 1fr);
         grid-template-areas: "tec tec" 
                             "prof prof"
                             "hob hob" 
@@ -928,8 +911,6 @@ a[download = "CV"] {
 
     .grid-container-exp {
         margin-top: 30px;
-        grid-template-rows: (3, 1fr);
-        grid-template-columns: (2, 1fr);
         grid-template-areas: "ed ed" 
                             "conc conc"
                             "lab lab";
