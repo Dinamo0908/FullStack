@@ -260,7 +260,8 @@ a[download = "CV"] {
     margin-top: 150px;
     display: grid;
     grid-template-areas: "tec prof"
-                         "hob idiom";
+                         "hob idiom"
+                         "calf calf";
     grid-gap: 20px;
 }
 
@@ -343,12 +344,35 @@ a[download = "CV"] {
     border-radius: 10px;
 }
 
+.grid-item-hab__calf {
+    grid-area: calf;
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+    height: 180px;
+    padding-top: 5px;
+    background: #003d74;
+    border-radius: 10px;
+}
+
+.grid-item-hab__calf h2 {
+    text-align: center;
+}
+
+.grid-item-hab__calf a {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
 .grid-item-hab__idiom ul li a, .grid-item-exp__conc h3 a {
     text-decoration: none;
     animation: standOut 3s infinite;
 }
 
-.grid-item-hab__idiom ul li a:hover {
+.grid-item-hab__idiom ul li a:hover, .grid-item-hab__calf a:hover {
     font-weight: bold;
 }
 
@@ -367,7 +391,7 @@ a[download = "CV"] {
     text-align: center;
 }
 
-.grid-item-hab__tec h2::after, .grid-item-hab__prof h2::after, .grid-item-hab__hob h2:after, .grid-item-hab__idiom h2::after {
+.grid-item-hab__tec h2::after, .grid-item-hab__prof h2::after, .grid-item-hab__hob h2:after, .grid-item-hab__idiom h2::after, .grid-item-hab__calf h2::after {
     content: "";
     display: block;
     margin: 0 auto;
@@ -376,14 +400,14 @@ a[download = "CV"] {
     border-bottom: 2px;
 }
 
-.grid-item-hab__tec:hover > h2::after, .grid-item-hab__prof:hover > h2::after, .grid-item-hab__hob:hover > h2:after, .grid-item-hab__idiom:hover > h2::after {
+.grid-item-hab__tec:hover > h2::after, .grid-item-hab__prof:hover > h2::after, .grid-item-hab__hob:hover > h2:after, .grid-item-hab__idiom:hover > h2::after, .grid-item-hab__calf:hover > h2::after {
     animation-name: barAnim;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     border-bottom: solid #fff;
 }
 
-.grid-item-hab__prof ul, .grid-item-hab__hob ul, .grid-item-hab__idiom ul {
+.grid-item-hab__prof ul, .grid-item-hab__hob ul, .grid-item-hab__idiom ul, .grid-item-hab__calf ul {
     margin-top: 10px;
     margin-left: 40px;
 }
@@ -426,11 +450,11 @@ a[download = "CV"] {
     border-radius: 10px;
 }
 
-.grid-item-exp__ed h2, .grid-item-exp__conc h2,.grid-item-exp__lab h2 {
+.grid-item-exp__ed h2, .grid-item-exp__conc h2, .grid-item-exp__lab h2 {
     text-align: center;
 }
 
-.grid-item-exp__ed h2::after, .grid-item-exp__ed h2::after, .grid-item-exp__conc h2::after,.grid-item-exp__lab h2::after, .flex-container-port h2::after {
+.grid-item-exp__ed h2::after, .grid-item-exp__ed h2::after, .grid-item-exp__conc h2::after, .grid-item-exp__lab h2::after, .flex-container-port h2::after {
     content: "";
     display: block;
     margin: 0 auto;
