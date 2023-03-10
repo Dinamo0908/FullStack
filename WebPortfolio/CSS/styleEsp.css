@@ -367,6 +367,17 @@ a[download = "CV"] {
     text-decoration: none;
 }
 
+.grid-item-hab__calf a::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 9%;
+    padding-top: 2px;
+    margin-bottom: 10px;
+    border-bottom: 2px;
+    border-bottom: 2px solid #fff;
+}
+
 .grid-item-hab__idiom ul li a, .grid-item-exp__conc h3 a {
     text-decoration: none;
     animation: standOut 3s infinite;
@@ -738,7 +749,8 @@ a[download = "CV"] {
         grid-template-areas: "tec tec" 
                             "prof prof"
                             "hob hob" 
-                            "idiom idiom";
+                            "idiom idiom"
+                            "calf calf";
     }
 
     .grid-container-exp {
@@ -776,7 +788,7 @@ a[download = "CV"] {
         border-bottom: 2px solid #fff;
     }
 
-    .grid-item-exp__ed h2::after, .grid-item-exp__ed h2::after, .grid-item-exp__conc h2::after,.grid-item-exp__lab h2::after, .flex-container-port h2::after, .grid-item-hab__tec h2::after, .grid-item-hab__prof h2::after, .grid-item-hab__hob h2:after, .grid-item-hab__idiom h2::after {
+    .grid-item-exp__ed h2::after, .grid-item-exp__ed h2::after, .grid-item-exp__conc h2::after,.grid-item-exp__lab h2::after, .flex-container-port h2::after, .grid-item-hab__tec h2::after, .grid-item-hab__prof h2::after, .grid-item-hab__hob h2:after, .grid-item-hab__idiom h2::after, .grid-item-hab__calf h2::after {
         animation-name: barAnim;
         animation-duration: 3s;
         animation-fill-mode: forwards;
@@ -809,7 +821,8 @@ a[download = "CV"] {
         grid-template-areas: "tec tec" 
                             "prof prof"
                             "hob hob" 
-                            "idiom idiom";
+                            "idiom idiom"
+                            "calf calf";
     }
 
     .grid-container-exp {
@@ -912,10 +925,11 @@ a[download = "CV"] {
         grid-template-areas: "tec tec" 
                             "prof prof"
                             "hob hob" 
-                            "idiom idiom";
+                            "idiom idiom"
+                            "calf calf";
     }
 
-    .grid-item-hab__tec, .grid-item-hab__prof, .grid-item-hab__hob, .grid-item-hab__idiom {
+    .grid-item-hab__tec, .grid-item-hab__prof, .grid-item-hab__hob, .grid-item-hab__idiom, .grid-item-hab__calf {
         width: 280px;
     }
 
@@ -923,7 +937,7 @@ a[download = "CV"] {
         width: 50%;
     }
 
-    .grid-item-hab__prof, .grid-item-hab__hob, .grid-container-hab__idiom {
+    .grid-item-hab__prof, .grid-item-hab__hob, .grid-container-hab__idiom, .grid-item-hab__calf {
         height: 250px;
     }
 

@@ -369,6 +369,17 @@ a[download = "Resume"] {
     text-decoration: none;
 }
 
+.grid-item-ski__calf a::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 9%;
+    padding-top: 2px;
+    margin-bottom: 10px;
+    border-bottom: 2px;
+    border-bottom: 2px solid #fff;
+}
+
 .grid-item-ski__spkLang ul li a, .grid-item-exp__comp h3 a {
     text-decoration: none;
     animation: standOut 3s infinite;
@@ -746,7 +757,8 @@ a[download = "Resume"] {
         grid-template-areas: "tec tec" 
                             "prof prof"
                             "hob hob" 
-                            "spkLang spkLang";
+                            "spkLang spkLang"
+                            "calf calf";
     }
 
     .grid-container-exp {
@@ -817,7 +829,8 @@ a[download = "Resume"] {
         grid-template-areas: "tec tec" 
                             "prof prof"
                             "hob hob" 
-                            "spkLang spkLang";
+                            "spkLang spkLang"
+                            "calf calf";
     }
 
     .grid-container-exp {
@@ -933,10 +946,11 @@ a[download = "Resume"] {
         grid-template-areas: "tec tec" 
                             "prof prof"
                             "hob hob" 
-                            "spkLang spkLang";
+                            "spkLang spkLang"
+                            "calf calf";
     }
 
-    .grid-item-ski__tec, .grid-item-ski__prof, .grid-item-ski__hob, .grid-item-ski__spkLang {
+    .grid-item-ski__tec, .grid-item-ski__prof, .grid-item-ski__hob, .grid-item-ski__spkLang, .grid-item-ski__calf {
         width: 280px;
     }
 
@@ -946,6 +960,10 @@ a[download = "Resume"] {
 
     .grid-item-ski__hob, .grid-container-ski__spkLang {
         height: 220px;
+    }
+
+    .grid-item-ski__calf {
+        height: 250px;
     }
 
     .grid-item-ski__prof ul, .grid-item-ski__hob ul, .grid-item-ski__spkLang ul {
