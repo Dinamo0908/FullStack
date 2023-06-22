@@ -453,7 +453,7 @@ a[download = "CV"] {
 
 .grid-item-exp__lab {
     width: 500px;
-    height: 230px;
+    height: 375px;
     padding: 10px;
     justify-self: center;
     background: #003d74;
@@ -956,9 +956,15 @@ a[download = "CV"] {
                             "lab lab";
     }
 
-    .grid-item-exp__ed, .grid-item-exp__conc, .grid-item-exp__lab {
+    .grid-item-exp__ed, .grid-item-exp__conc {
         width: 300px;
         height: 320px;
+        padding: 10px;
+    }
+
+    .grid-item-exp__lab {
+        width: 300px;
+        height: 470px;
         padding: 10px;
     }
 
